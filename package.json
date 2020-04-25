@@ -1,0 +1,22 @@
+{
+  "name": "react-router",
+  "version": "1.0.0",
+  "description": "Starter pack for node server + react to run concurrently",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd react-router-app && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "David Gaster",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
